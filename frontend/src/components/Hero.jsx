@@ -1,5 +1,6 @@
 import React from "react";
 import Clips from "./utils/Clips";
+import SocialLinks from "./utils/SocialLinks";
 
 const Hero = ({
   heroapi: { title, subtitle, btntext, img, sociallinks, videos },
@@ -21,10 +22,15 @@ const Hero = ({
                 imgsrc={val.imgsrc}
                 clip={val.clip} /> 
             ))}</div>
-                <div></div> 
+                <div className="grid items-center absolute top-[33vh] lg:top-[27vh] right-0 gap-3 ">
+                    {sociallinks?.map((val,i) => (
+                        <SocialLinks
+                        key={i}
+                        icon={val.icon} />
+                    ))}</div> 
              </div>
           <div className=" flex items-center">
-            <img  className='w-auto h-[45vh] lg:h-[35vh] md:h-[31vh] sm:h-[21vh] xsm:h-[19vh] transitions-theme -rotate-[20deg] hover:rotate-[0deg] duration:300 object-fill 'src={img} alt="image" />
+            <img  className='w-auto h-[45vh] lg:h-[30vh] p-3 md:p-2 md:h-[30vh] sm:h-[21vh] xsm:h-[19vh] transitions-theme -rotate-[20deg] hover:rotate-[0deg] duration:300 object-fill 'src={img} alt="image" />
           </div>
         </div>
       </div>
