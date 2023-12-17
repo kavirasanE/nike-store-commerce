@@ -1,7 +1,7 @@
 import React from 'react'
-import { Hero } from './components'
-import { heroapi ,popularsales,toprateslaes } from './data/data.js'
-import Sales from './components/Sales.jsx'
+import { Hero ,Sales ,FlexContent} from './components'
+import { heroapi ,highlight,popularsales,sneaker,toprateslaes } from './data/data.js'
+
 
 const App = () => {
   return (
@@ -9,7 +9,9 @@ const App = () => {
     <main className='flex  flex-col gap-16 relative'>
       <Hero heroapi={heroapi} />
       <Sales  endpoint ={popularsales} ifExists />
+      <FlexContent endpoint={highlight} ifExists/>
       <Sales  endpoint ={toprateslaes} />
+      <FlexContent endpoint={sneaker} />
     </main>
     </>
   )
