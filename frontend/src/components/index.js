@@ -4,3 +4,4 @@ export {default as FlexContent} from '../components/FlexContent';
 export {default as Stories} from '../components/Stories';
 export {default as Footer} from '../components/Footer';
 export {default as Navbar} from '../components/Navbar';
+export {default as Cart}  from '../components/Cart'
