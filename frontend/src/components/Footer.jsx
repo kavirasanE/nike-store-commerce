@@ -32,7 +32,7 @@ const Footer = ({ footerAPI: { titles, links } }) => {
             <p className="text-sm md:text-center font-semibold">
               Copyright &copy; {time} <span className="">All
               Rights Reserved</span> 
-              <span className="font-bold"> KAVIRASAN </span>
+              <span className="font-bold text-xl"> kavirasan </span>
             </p>
           </div>
         </div>
